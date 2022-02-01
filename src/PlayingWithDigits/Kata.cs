@@ -4,9 +4,9 @@ using System.Linq;
 
 namespace PlayingWithDigits
 {
-    internal class DigPow
+    public class Kata
     {
-        internal static long digPow(int n, int p)
+        public static long DigPow(int n, int p)
         {
             if (n <= 0 || p <= 0) return -1;
 
