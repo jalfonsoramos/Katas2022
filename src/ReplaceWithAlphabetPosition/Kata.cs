@@ -19,7 +19,7 @@ public static class Kata
         if (string.IsNullOrEmpty(text)) throw new ArgumentException();
 
         List<int> output = text
-                .ToLower()
+                .ToLowerInvariant()
                 .ToCharArray()
                 .Where(c=>alphabet.ContainsKey(c))
                 .Select(c =>alphabet[c])
